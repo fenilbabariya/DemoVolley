@@ -13,6 +13,6 @@ public class UserDetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_detail);
         Intent intent = getIntent();
-        
+        Toast.makeText(this, ""+intent.getIntExtra("userid",0), Toast.LENGTH_SHORT).show();
     }
 }
